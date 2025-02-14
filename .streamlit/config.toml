@@ -1,3 +1,0 @@
-[server]
-# Add the path to your app
-mainModule = "Task2-Teeth classification using pre-trained model/teeth_classification_app/app.py"
