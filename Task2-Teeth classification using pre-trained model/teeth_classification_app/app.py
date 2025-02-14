@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import pandas as pd
-
+import os 
 # Page config
 st.set_page_config(
     page_title="Dental Classification",
@@ -15,12 +15,13 @@ st.set_page_config(
 IMG_SIZE = 224
 CLASS_NAMES = ['CaS', 'CoS', 'Gum', 'MC', 'OC', 'OLP', 'OT']
 
+current_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Model loading
 @st.cache_resource
 def load_model():
     try:
-        model = tf.keras.models.load_model('teeth_classification_model.h5')
+        model_path = os.path.join(current_dir, 'teeth_classification_model.h5')
+        model = tf.keras.models.load_model(model_path)
         return model
     except Exception as e:
         st.error(f"Error loading model: {str(e)}")
