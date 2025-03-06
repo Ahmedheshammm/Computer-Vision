@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Segmentation App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Water Segmentation Using DeepLabv3</h1>
+        
+        <div class="upload-form">
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <div class="file-input">
+                    <label for="file">Select a .tif image:</label>
+                    <input type="file" id="file" name="file" accept=".tif,.tiff" required>
+                </div>
+                
+                <button type="submit" class="btn">Process Image</button>
+            </form>
+        </div>
+        
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <p>Upload a multi-band .tif image to detect water bodies. The model will process the image and display the water segmentation result.</p>
+            <p>For best results, use images similar to those used during model training.</p>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
