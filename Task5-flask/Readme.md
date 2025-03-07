@@ -1,6 +1,6 @@
 # Model Deployment Using Flask
 
-This repository contains a Flask-based model deployment for teeth classification. Follow the steps below to set up and run the project.
+This repository contains a Flask-based model deployment for water segmentation. Follow the steps below to set up and run the project.
 
 ## Prerequisites
 - Python 3.10
