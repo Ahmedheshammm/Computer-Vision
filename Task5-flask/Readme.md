@@ -41,7 +41,7 @@ The application will start on `http://127.0.0.1:5000/` by default.
 
 ### Example Request
 ```bash
-curl -X POST -F "file=@image.jpg" http://127.0.0.1:5000/predict
+curl -X POST -F "file=@image.tif" http://127.0.0.1:5000/predict
 ```
 
 ### Example Response
