@@ -58,8 +58,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgements
 - Flask
 - TensorFlow/PyTorch (if applicable)
-- Streamlit (if applicable)
 
-For any questions or support, please contact [Your Email].
+For any questions or support, please contact [ahmed.heshaam12@gmail.com].
 
 
